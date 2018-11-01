@@ -1,0 +1,222 @@
+// Body
+*
+	box-sizing: border-box
+body
+	font-size: 16px
+	font-family: 'Mali', cursive
+img
+	display: block
+// Header
+.header
+	background: #343c4e url('../img/bg/bg-header.jpg') center no-repeat
+	background-size: cover
+	height: 100vh
+	color: #fff
+	text-align: center
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
+	position: relative
+	&_title
+		margin-top: 0
+		font-size: 62px
+		margin-top: -60px
+		margin-bottom: 30px
+		&::selection
+			color: #111
+			background-color: #ddd
+			text-shadow: 0 1px 1px #eee
+	&_subtitle
+		font-size: 32px
+		&::selection
+			color: #111
+			background-color: #ddd
+			text-shadow: 0 1px 1px #eee
+	&_arrow
+		position: absolute
+		left: 50%
+		bottom: 50px
+		a
+			font-size: 50px
+			color: #fff
+// GRID
+.container
+	width: 1140px
+	margin-left: auto
+	margin-right: auto
+.row
+	&::after
+		content: ' '
+		display: table
+		clear: both
+.col-4
+	width: 360px
+	margin-right: 30px
+	float: left
+	&:last-child
+		margin-right: 0
+// Portfolio
+.portfolio
+	padding-top: 50px
+	padding-bottom: 100px
+	font-family: 'Merriweather', serif
+	h2
+		font-size: 46px
+		text-align: center
+		text-shadow: 0 1px 1px #444
+		margin-bottom: 60px
+		&::selection
+			color: #eee
+			background-color: #111
+	&_img
+		margin-bottom: 17px
+	&_title
+		a
+			text-decoration: none
+			color: #995
+			&:hover
+				border-bottom: 1px solid #111
+		font-size: 24px
+		margin-bottom: 12px
+	&_description
+		font-family: 'Merriweather'
+		font-weight: 400
+		line-height: 25px
+// Footer
+.footer
+	background-color: #063640
+	color: #6479a2
+	padding-top: 90px
+	padding-bottom: 90px
+	text-align: center
+	div
+		margin-top: 0
+	&_name
+		font-size: 28px
+		margin-bottom: 10px
+		line-height: 1.4
+	&_copy
+		font-size: 18px
+	&_description
+		color: #fff
+		font-size: 28px
+		margin-bottom: 20px
+		text-align: center
+	&_icon
+		a
+			color: #fff
+			transition: .2s linear
+			&:hover
+				color: yellow
+		&s
+			display: flex
+			align-items: center
+			justify-content: space-around
+			font-size: 32px
+	&_feedback
+		margin-bottom: 10px
+		&_link
+			font-size: 28px
+			color: #fff
+			text-decoration: none
+			border: 3px solid #fff
+			padding-left: 100px
+			padding-right: 100px
+			padding-top: 4px
+			padding-bottom: 4px	
+			border-radius: 26px
+			letter-spacing: 2px
+			transition: .1s linear
+			&:hover
+				background-color: #fff
+				color: #063640
+	p
+		font-size: 18px
+		color: #fff
+		margin-top: 18px
+.portfolio_page
+	padding-top: 50px
+	padding-bottom: 50px
+	text-align: center
+	img
+		margin-bottom: 50px
+		max-width: 100%
+		height: auto
+		display: inline-block
+.button_back
+	font-size: 28px
+	color: #063640
+	text-decoration: none
+	border: 3px solid #063640
+	padding-left: 100px
+	padding-right: 100px
+	padding-top: 4px
+	padding-bottom: 4px	
+	border-radius: 26px
+	letter-spacing: 2px
+	transition: .1s linear
+	&:hover
+		background-color: #063640
+		color: #fff
+// Media
+@media (max-width: 1140px)
+	.container
+		width: 100%
+	.col-4
+		width: 100% /* реальная ширина = w100% + border + padding*/
+		margin: 0
+		margin-bottom: 35px
+		padding-left: 15px
+		padding-right: 15px
+		text-align: center
+		img
+			display: inline
+			width: 60%
+	.header
+		&_title
+			font-size: 40px
+		&_subtitle
+			font-size: 26px
+	.portfolio
+		h2
+			font-size: 36px
+		&_title
+			font-size: 20px
+		&_description
+			font-size: 16px
+	.footer
+		&_name
+			margin-bottom: 3px
+		&_copy
+			margin-bottom: 17px
+		&_description
+			font-size: 28px
+			margin-bottom: 10px
+		&_icons
+			margin-bottom: 30px
+		&_feedback
+			a
+				padding: 5px 45px
+			margin-bottom: 20px
+@media (max-width: 625px)
+	.button_back
+		padding: 0
+		font-size: 20px
+		padding-right: 20px
+		padding-left: 20px
+		padding-top: 10px
+		padding-bottom: 10px
+
+
+
+
+
+		
+
+
+
+
+
+
+
